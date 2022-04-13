@@ -1,0 +1,31 @@
+package caerang;
+
+public class 과제3 {
+	public static void main(String[] args) {
+		int array[][] = new int[7][7]; 
+		
+		int cnt = 1; //1부터 시작
+		boolean isPositive = true;
+		for (int i = 0; i < 6; i++) {
+			if (isPositive == true) { 
+				for (int j = 0; j < 6; j++) {
+					array[i][j] = cnt++; 
+				}
+			} else {
+				for (int j = 6; j>=0; j--) { 
+					array[i][j] = cnt++;
+				}
+			}
+			isPositive = !isPositive;
+		}
+		for(int i = 0; i < 6; i++)
+		{
+			for(int j = 0 ; j <6; j++)
+			{
+				System.out.print(array[i][j] + "\t");
+			}
+			System.out.println(); //줄을 바꿔서 출력
+				}
+			}
+	}
+
