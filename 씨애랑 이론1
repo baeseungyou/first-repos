@@ -1,0 +1,31 @@
+package caerang;
+import java.util.Scanner;
+
+public class 이론과제1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("숫자입력: ");
+		int n = input.nextInt();
+		int eachNum[] = new int[10]; // 최대 10자리
+		int index = 0;
+		while (n > 0) {   // n이 0보다 크면 계속
+			eachNum[index] = n % 10;
+			index++;
+			n /= 10; 
+		}
+		
+		int sumNum = 0; 
+		
+		for (int i = index-1; i>= 0; i--)
+		{
+			sumNum += eachNum[i];
+			if(i == 0)  // 만약에 i가 0과 같을 때 
+			{
+				System.out.print(eachNum[i] + "=" + sumNum);
+				break;
+			}
+			System.out.print(eachNum[i] + "+");
+			}
+		}
+	}
