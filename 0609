@@ -1,0 +1,61 @@
+package p1201;
+
+interface InterEx2{
+	void setName(String name);
+	void setAge(int age);
+	void setScore(double score);
+	String getName();
+	int getAge();
+	double getScore();
+}
+
+
+class Data3 implements InterEx2{
+	private String name;
+	private int age;
+	private double score;
+	
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	
+	public void setAge(int age) {
+		this.age=age;
+	}
+	
+	public void setScore(double score) {
+		this.score=score;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+   public int getAge() {
+	   return age;
+   }
+   public double getScore() {
+	   return score;
+   }
+   }
+	
+
+public class AppEx2_3 extends Data3{
+	
+	public static void main(String[] args) {
+		AppEx2_3 std= new AppEx2_3();
+		
+		std.setName("박달문");
+	    std.setAge(30);
+	    std.setScore(45.5);
+	    
+	    System.out.println("이름 : " + std.getName() + "\n"
+	    		         +"나이 : " + std.getAge() + " \n"
+	    		         +"점수 : " + std.getScore() );
+	
+	}
+
+}
+
+
