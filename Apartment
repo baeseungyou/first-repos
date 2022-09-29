@@ -1,0 +1,13 @@
+package week05_01_inherit;
+
+public class Apartment extends House {
+	public int callElevator(int floor) {
+		int ret=0;
+		return ret;
+	}
+	public int callToNeighborhood(int roomNum) {
+		int ret=0;
+		return ret;
+	}
+	}
+
