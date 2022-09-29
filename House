@@ -1,0 +1,28 @@
+package week05_01_inherit;
+
+public class House {
+	int area;
+	
+	public int openDoor() {
+		int ret=0;
+		int roomNum=13;
+		ret=roomNum;
+		return ret;
+	}
+	public int closeDoor(int roomNum) {
+		int ret=1;
+		return ret;
+	}
+	public int openWindow(int len) {
+		int ret=0;
+		return ret;
+	}
+	public int loseWindow(int windowNum, int len) {
+		int ret=0;
+		ret=windowNum;
+		return ret;
+	}
+
+
+
+}
