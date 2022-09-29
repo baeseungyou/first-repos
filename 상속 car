@@ -1,0 +1,33 @@
+package week05_01_inherit;
+
+public class Car {
+	int carSpeed;
+	public int start() {
+		int ret=0;
+		System.out.println("Car::start()");
+		return ret;
+	}
+	public int stop() {
+		int ret=0;
+		System.out.println("Car::stop()");
+		return ret;
+	}
+	public int setSpeed(int speed) {
+		carSpeed=speed;
+		System.out.println("Car::ssetSpeed()");
+		int ret=1;
+		return ret;
+	}
+	public int getSpeed() {
+		int ret=carSpeed;
+		System.out.println("Car::getSpeed()");
+		return ret;
+		
+	 
+	
+		
+		
+		
+	}
+
+}
