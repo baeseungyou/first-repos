@@ -1,0 +1,21 @@
+package week05_01_inherit;
+
+public class Main1 {
+	
+	public static void main(String[] args) {
+		Car car = new Car();
+		SportsCar scar = new SportsCar();
+		int speed=100;
+		int retVal=0;
+		
+		retVal=car.start();
+		retVal=car.setSpeed(speed);
+		retVal=car.getSpeed();
+		
+		retVal=scar.start();
+		retVal=scar.getSpeed();
+		retVal=scar.getCover();
+		
+	}
+
+}
