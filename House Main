@@ -1,0 +1,20 @@
+package week05_01_inherit;
+
+public class Main2 {
+	
+	public static void main(String[] args) {
+		int retVal=0;
+		int rn=100;
+		int floor = 111;
+		House h = new House();
+		Apartment ap = new Apartment();
+		
+		retVal=h.openDoor();
+		retVal=h.closeDoor(rn);
+		
+		retVal=ap.openDoor();
+		retVal=ap.closeDoor(rn);
+		retVal=ap.callElevator(floor);
+	}
+
+}
