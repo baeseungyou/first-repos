@@ -1,0 +1,15 @@
+package week05_01_inherit;
+
+public class SportsCar extends Car {
+	public int openCover() {
+		int ret=1;
+		System.out.println("openCover::openCover()");
+		return ret;
+	}
+	public int getCover() {
+		int ret=1;
+		System.out.println("openCover::getCover()");
+		return ret;
+	}
+
+}
